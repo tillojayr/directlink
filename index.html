@@ -68,7 +68,7 @@
               </li>
             </ul>
             <!-- account btn -->
-            <a href="login.php" class="btn btn-outline-primary">Log In</a>
+            <a href="login-jobseeker.php" class="btn btn-outline-primary">Log In</a>
             <!-- account btn -->
             <a href="register.html" class="btn btn-primary ms-2 ms-lg-3"
               >Sign Up</a
@@ -96,12 +96,7 @@
                   style="font-size: 14px"
                   class="ms-2 fas fa-arrow-right"></span
               ></a>
-              <a type="button" class="btn btn-outline-primary mx-3" href="#"
-                >LOG IN AS
-                <span
-                  style="font-size: 14px"
-                  class="ms-2 fas fa-arrow-right"></span
-              ></a>
+              <a type="button" class="btn btn-outline-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">LOG IN AS <span style="font-size: 14px" class="ms-2 fas fa-arrow-right"></span></a>
             </div>
           </div>
           <div class="col-lg-6">
@@ -295,6 +290,31 @@
         </div>
       </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login As</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">Choose your login type:</p>
+            <div class="row justify-content-center">
+              <div class="col-lg-6 text-center mb-2">
+                <a href="login-jobseeker.php" class="btn btn-primary w-100" style="height: 100px; line-height: 80px;">Job Seeker</a>
+              </div>
+              <div class="col-lg-6 text-center">
+                <a href="login-admin.php" class="btn btn-secondary w-100" style="height: 100px; line-height: 80px;">Admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- # JS Plugins -->
     <script src="plugins/jquery/jquery.min.js"></script>
